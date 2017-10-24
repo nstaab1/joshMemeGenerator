@@ -113,6 +113,13 @@
     <Content Include="Content\Images\jtIndians.png" />
     <Content Include="Content\Images\jtPitcher.png" />
     <Content Include="Content\Images\jtPretzels.png" />
+    <Content Include="Content\Images\MemePhotos\jtAstley.png" />
+    <Content Include="Content\Images\MemePhotos\jtBird.png" />
+    <Content Include="Content\Images\MemePhotos\jtBoatTemp.png" />
+    <Content Include="Content\Images\MemePhotos\jtFunny.png" />
+    <Content Include="Content\Images\MemePhotos\jtIndians.png" />
+    <Content Include="Content\Images\MemePhotos\jtPitcher.png" />
+    <Content Include="Content\Images\MemePhotos\jtPretzels.png" />
     <Content Include="Content\Images\template.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -160,7 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\MemePhotos\" />
     <Folder Include="Content\Images\SaveMemes\" />
   </ItemGroup>
   <PropertyGroup>
