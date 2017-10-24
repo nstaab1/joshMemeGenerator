@@ -1,0 +1,30 @@
+﻿@model Project.Web.Models.Card
+
+@{
+    ViewBag.Title = "CardResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>CardResult</h2>
+
+<div class="memeParent">
+    <img class ="finalMeme" src="@Url.Content("~/Content/Images/MemePhotos/" + Model.ImageName)" />
+    <div class="memeMessageOne">
+        <p>@Model.MessageLineOne</p>
+    </div>
+    <div class="memeMessageTwo">
+        <p>@Model.MessageLineTwo</p>
+    </div>
+</div>
+
+<form action="@Url.Action("TemplatePicker", "Card")" method="get">
+    <button>Make a new meme</button>
+</form>
+
+<form action="@Url.Action("SaveImage", "Card")" method="post">
+    <button>Save Photo</button>
+</form>
+
+
+

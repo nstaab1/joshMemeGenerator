@@ -1,0 +1,59 @@
+﻿@model Project.Web.Models.Templates
+
+@{
+    ViewBag.Title = "TemplateGenerator";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>TemplateGenerator</h2>
+<div class="row">
+    
+    <div class="col-md-6">
+        <h2>Enter the info for your card.</h2>
+        <form action="@Url.Action("CardResult", "Card")" method="get">
+
+            <input type="hidden" name="ImageName" value="@Model.ImageName" />
+            <input type="hidden" name="TemplateId" value="@Model.Id" />
+            <div class="form-group">
+                <label for="email">Email Address To:</label>
+                <input type="text" class="form-control" id="email" name="toEmail" />
+            </div>
+            <div class="form-group">
+                <label for="toEmail">Email To Name:</label>
+                <input type="text" class="form-control" id="toEmail" name="toName" />
+            </div>
+            <div class="form-group">
+                <label for="messageOne"> Message Line One:</label>
+                <input type="text" class="form-control" id="messageOne" name="messageLineOne" />
+            </div>
+            <div class="form-group">
+                <label for="messageTwo"> Message Line Two:</label>
+                <input type="text" class="form-control" id="messageTwo" name="messageLineTwo" />
+            </div>
+            <div class="form-group">
+                <label for="fromName"> Email From Name:</label>
+                <input type="text" class="form-control" id="fromName" name="fromName" />
+            </div>
+            <div class="form-group">
+                <label for="fromEmail"> Email Address From:</label>
+                <input type="text" class="form-control" id="fromEmail" name="fromEmail" />
+            </div>
+
+            <button>Generator Your Josh Meme</button>
+
+        </form>
+
+
+
+
+        
+    </div>
+    <div class="col-md-6">
+        <h2>@Model.Name</h2>
+        <img class="GeneratorView" src="@Url.Content("~/Content/Images/" + Model.ImageName)" />
+        <h2>Template Example</h2>
+        <p>Here is a template to help visualize the final card.</p>
+        <img class="template" src="@Url.Content("~/Content/Images/" + "template.png")" />
+    </div>
+
+</div>

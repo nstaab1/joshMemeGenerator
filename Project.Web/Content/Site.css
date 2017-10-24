@@ -1,0 +1,79 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.templateView{
+    height: 200px;
+}
+
+.GeneratorView {
+    height: 300px;
+}
+
+.memeParent {
+    position: relative;
+    display: inline-block;
+}
+
+.memeMessageOne {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.memeMessageTwo {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.template{
+    height: 250px;
+}
+
+.finalMeme{
+    height: 800px;
+}
+
+.templateItem {
+    background-color: #b2b5ba !important;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 5%;
+    min-height: 400px;
+    position: relative;
+    font-family: 'Six Caps', sans-serif;
+}
+
+.centerDiv {
+    width: auto;
+    height: auto;   
+}

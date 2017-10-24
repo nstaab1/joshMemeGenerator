@@ -1,0 +1,29 @@
+﻿@using Project.Web.Models;
+@model List<Templates>
+
+@{
+    ViewBag.Title = "TemplatePicker";
+}
+
+<h2>TemplatePicker</h2>
+
+<div class="container">
+    <div class="row">
+
+
+        @foreach (Templates t in Model)
+        {
+            <div class="col-md-4 templateBox">
+
+                <div class="templateItem panel panel-default">
+                    <h3 style="font-family: 'Six Caps', sans-serif;">@t.Name</h3>
+                    <div centerDiv>
+                        <a href="@Url.Action("TemplateGenerator","Card", new { id = t.Id})">
+                            <img class="templateView" src="@Url.Content("~/Content/Images/" + t.ImageName)" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
